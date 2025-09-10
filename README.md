@@ -64,10 +64,10 @@ go-concepts-demo/
 
 ### pkg/io/
 - io_demo.go：文件读写、标准输入输出
-- pkg/others/
+
+### pkg/others/
 - misc_demo.go：指针、defer、recover、类型转换、反射等零散知识点
 
 ### examples/
-
 - basic_usage.go：组合调用各个模块，演示基本用法
 - advanced_usage.go：组合复杂场景，例如并发 + 错误处理 + 泛型
