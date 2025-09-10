@@ -1,4 +1,3 @@
-//初始化go.mod命令   go mod init demo
-module demo
+module github.com/xuepp/godemo
 
 go 1.24.5
