@@ -2,11 +2,8 @@ package types
 
 import "fmt"
 
-func init() {
-	fmt.Println("------------以下是Struct相关demo------------------")
-}
-
 func StructDemo() {
+	fmt.Println("------------以下是Struct相关demo------------------")
 	fmt.Println("1.Struct的定义和使用")
 	p := Person{Name: "Alice", Age: 30}
 	fmt.Println("Person Name:", p.Name)
