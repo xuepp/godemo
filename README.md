@@ -13,9 +13,14 @@ go-concepts-demo/
 │   ├─ functions/             # 函数和方法
 │   │   ├─ function_demo.go
 │   │   └─ method_demo.go
+
 │   ├─ types/                 # 数据类型、结构体、接口
 │   │   ├─ struct_demo.go
 │   │   ├─ interface_demo.go
+        ├── array_demo.go
+│       ├── interface_demo.go
+│       ├── slice_demo.go
+│       └── struct_demo.go
 │   │   └─ type_demo.go
 │   ├─ concurrency/           # 并发相关
 │   │   ├─ goroutine_demo.go
