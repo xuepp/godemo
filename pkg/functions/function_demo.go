@@ -83,6 +83,9 @@ func FunctionDemo() {
 	fmt.Printf("矩形面积为: %d", area1)
 	//fmt.Printf("\n正方形面积为: %d", area2)
 
+	//构造函数
+	fmt.Println(NewUser().Name)
+
 }
 
 // add:函数名
@@ -158,4 +161,14 @@ func yanchi() {
 
 func init() {
 	fmt.Println("Welcome to init() function")
+}
+
+// User 是一个简单的业务对象
+type User struct {
+	Name string
+}
+
+// NewUser 是 User 的构造函数
+func NewUser() *User {
+	return &User{Name: "Tom"}
 }
