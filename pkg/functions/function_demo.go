@@ -84,8 +84,10 @@ func FunctionDemo() {
 	//fmt.Printf("\n正方形面积为: %d", area2)
 
 	//构造函数
-	fmt.Println(NewUser().Name)
-
+	user := NewUser()
+	fmt.Println("User Name: ", user)
+	greeter := NewGreeter(user)
+	greeter.Greet()
 }
 
 // add:函数名
@@ -171,4 +173,19 @@ type User struct {
 // NewUser 是 User 的构造函数
 func NewUser() *User {
 	return &User{Name: "Tom"}
+}
+
+// Greeter 依赖 User
+type Greeter struct {
+	User *User
+}
+
+// NewGreeter 是 Greeter 的构造函数
+func NewGreeter(u *User) *Greeter {
+	return &Greeter{User: u}
+}
+
+// Greet 打印问候
+func (g *Greeter) Greet() {
+	fmt.Printf("Hello, %s!\n", g.User.Name)
 }
